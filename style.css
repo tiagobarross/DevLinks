@@ -82,11 +82,6 @@ body * {
   animation: slide-dark 0.2s;
 }
 
-#Switch button:hover{
-  outline: 8px solid var(--highlight-color);
-  transition: 0.2s;
-}
-
 .light #Switch button{
   animation: slide-light .2s forwards;
 }
@@ -168,6 +163,13 @@ footer >a {
 
   .light{
     --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
+}
+
+@media (min-width: 700px) {
+  #Switch button:hover{
+    outline: 8px solid var(--highlight-color);
+    transition: 0.2s;
   }
 }
 
